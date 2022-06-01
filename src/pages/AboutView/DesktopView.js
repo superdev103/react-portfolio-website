@@ -318,8 +318,8 @@ class DesktopView extends Component {
                     ref="firebaseIcon"
                     className="techTile"
                     style={{
-                      width: 131,
-                      height: 126,
+                      width: 141,
+                      height: 122,
                       cursor: "pointer",
                     }}
                     alt=""
@@ -336,8 +336,8 @@ class DesktopView extends Component {
                     className="techTile"
                     style={{
                       ...tile,
-                      width: 131,
-                      height: 126,
+                      width: 141,
+                      height: 122,
                       cursor: "pointer",
                     }}
                     justifyContent="center"
@@ -371,8 +371,8 @@ class DesktopView extends Component {
                   src={reactIcon}
                   ref="reactIcon"
                   style={{
-                    width: 149,
-                    height: 132,
+                    width: 141,
+                    height: 122,
                     cursor: "pointer",
                   }}
                   alt=""
@@ -391,8 +391,8 @@ class DesktopView extends Component {
                   className="techTile"
                   style={{
                     ...tile,
-                    width: 149,
-                    height: 132,
+                    width: 141,
+                    height: 122,
                     cursor: "pointer",
                   }}
                   justifyContent="center"
@@ -511,7 +511,7 @@ class DesktopView extends Component {
                 <Flippy
                   style={{
                     marginBottom: 10,
-                    width: 152,
+                    width: 141,
                     height: 122,
                   }}
                 >
@@ -525,7 +525,7 @@ class DesktopView extends Component {
                     <img
                       src={nodeIcon}
                       style={{
-                        width: 152,
+                        width: 141,
                         height: 122,
                         cursor: "pointer",
                       }}
@@ -545,7 +545,7 @@ class DesktopView extends Component {
                       className="techTile"
                       style={{
                         ...tile,
-                        width: 152,
+                        width: 141,
                         height: 122,
                         cursor: "pointer",
                       }}
@@ -571,8 +571,8 @@ class DesktopView extends Component {
               >
                 <Flippy
                   style={{
-                    width: 121,
-                    height: 116,
+                    width: 141,
+                    height: 122,
                     marginBottom: 10,
                   }}
                 >
@@ -585,7 +585,7 @@ class DesktopView extends Component {
                   >
                     <img
                       src={reduxIcon}
-                      style={{ width: 121, height: 116, cursor: "pointer" }}
+                      style={{ width: 141, height: 122, cursor: "pointer" }}
                       alt=""
                       className="techTile"
                     />
@@ -602,8 +602,8 @@ class DesktopView extends Component {
                       className="techTile"
                       style={{
                         ...tile,
-                        width: 121,
-                        height: 116,
+                        width: 141,
+                        height: 122,
                         cursor: "pointer",
                       }}
                       justifyContent="center"
@@ -628,8 +628,8 @@ class DesktopView extends Component {
               >
                 <Flippy
                   style={{
-                    width: 134,
-                    height: 125,
+                    width: 141,
+                    height: 122,
                     marginBottom: 10,
                   }}
                 >
@@ -642,7 +642,7 @@ class DesktopView extends Component {
                   >
                     <img
                       src={flutterIcon}
-                      style={{ width: 134, height: 125, cursor: "pointer" }}
+                      style={{ width: 141, height: 122, cursor: "pointer" }}
                       alt=""
                     />
                   </FrontSide>
@@ -658,8 +658,8 @@ class DesktopView extends Component {
                       className="techTile"
                       style={{
                         ...tile,
-                        width: 134,
-                        height: 125,
+                        width: 141,
+                        height: 122,
                         cursor: "pointer",
                       }}
                       justifyContent="center"
@@ -684,8 +684,8 @@ class DesktopView extends Component {
               >
                 <Flippy
                   style={{
-                    width: 121,
-                    height: 116,
+                    width: 141,
+                    height: 122,
                   }}
                 >
                   <FrontSide
@@ -697,7 +697,7 @@ class DesktopView extends Component {
                   >
                     <img
                       src={xdIcon}
-                      style={{ width: 121, height: 116, cursor: "pointer" }}
+                      style={{ width: 141, height: 122, cursor: "pointer" }}
                       alt=""
                       className="techTile"
                     />
@@ -714,8 +714,8 @@ class DesktopView extends Component {
                       className="techTile"
                       style={{
                         ...tile,
-                        width: 121,
-                        height: 116,
+                        width: 141,
+                        height: 122,
                         cursor: "pointer",
                       }}
                       justifyContent="center"
