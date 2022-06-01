@@ -57,7 +57,7 @@ export default class MobileView extends Component {
             <NavDrawer selectedItem={0}/>
           </SwipeableDrawer>
 
-          <Column flex={1}>
+          <Column flex="1">
             {/* <Typography
               variant="h4"
               style={{ marginLeft: 20, fontWeight: 600, marginTop: 20,}}

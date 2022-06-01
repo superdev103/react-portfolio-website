@@ -185,6 +185,7 @@ class DesktopView extends Component {
     for (var i = 1; i <= Math.floor((temp - 30) / (14 * 1.42857)) + 1; i++) {
       list.push(
         <Typography
+          key={i}
           variant="subtitle1"
           style={{
             fontSize: 14
@@ -219,9 +220,9 @@ class DesktopView extends Component {
         <Row>
           <SimpleHeader title="About" />
         </Row>
-        <Row flex={1}>
+        <Row flex="1">
           <Fade in={true} timeout={1000}>
-            <Column flex={1} justifyContent="center" alignItems="center">
+            <Column flex="1" justifyContent="center" alignItems="center">
               <Draggable handle=".handle" bounds="body">
                 <Column
                   ref="console"
@@ -255,7 +256,7 @@ class DesktopView extends Component {
                     />
                     <div style={{ ...dot, background: "#FF6767" }} />
                   </Row>
-                  <Row flex={1}>
+                  <Row flex="1">
                     <Column
                       style={{
                         ...linesContainer,
@@ -275,7 +276,7 @@ class DesktopView extends Component {
                         {this.renderLineNumbers()}
                       </Typography>
                     </Column>
-                    <Column flex={1} style={{ marginTop: 15 }}>
+                    <Column flex="1" style={{ marginTop: 15 }}>
                       <Typography
                         ref="aboutText"
                         variant="subtitle1"
@@ -303,7 +304,7 @@ class DesktopView extends Component {
             </Column>
           </Fade>
 
-          <Row flex={1} justifyContent="center" alignItems="center">
+          <Row flex="1" justifyContent="center" alignItems="center">
             <Column alignItems="start" style={{ height: "100%" }}>
               <Flippy>
                 <FrontSide

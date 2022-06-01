@@ -85,7 +85,7 @@ export default function MobileView(props) {
 
   const renderTechTile = icon => {
     return (
-      <Flippy style={{ marginRight: tileMarginRight }}>
+      <Flippy style={{ marginRight: tileMarginRight }} key={icon.title}>
         <FrontSide style={flippySidesStyle}>
           <img
             src={icon.img}

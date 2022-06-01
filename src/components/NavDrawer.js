@@ -50,6 +50,7 @@ class NavDrawer extends Component {
     return (
       <StyledListItem
         button
+        key={index}
         selected={selectedIndex === index}
         onClick={event => this.handleListItemClick(event, index)}
       >
@@ -69,12 +70,12 @@ class NavDrawer extends Component {
 
   render() {
     return (
-      <Column style={rootStyle} flex={1}>
+      <Column style={rootStyle} flex="1">
         <Row justifyContent="center" style={{ paddingTop: 80 }}>
           <ExampleComponent
             image={MyPhoto}
-            imageWidth={88}
-            imageHeight={90}
+            imageWidth={92}
+            imageHeight={92}
             roundedSize="0"
           />
         </Row>

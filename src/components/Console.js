@@ -59,7 +59,7 @@ export default function Console() {
     let list = [];
     for (var i = 1; i <= Math.floor(temp / (13 * 1.42857)) + 1; i++) {
       list.push(
-        <div style={{ fontSize: 12 }}>
+        <div style={{ fontSize: 12 }} key={i}>
           {i}
           <br></br>
         </div>
@@ -71,7 +71,7 @@ export default function Console() {
   console.log('about text height mobile: ', aboutTextHeight);
 
   return (
-    <Row flex={1} style={rootStyle}>
+    <Row flex="1" style={rootStyle}>
       <Column
         style={{
           ...linesContainer,
@@ -87,7 +87,7 @@ export default function Console() {
           {renderLineNumbers()}
         </Typography>
       </Column>
-      <Column flex={1} style={{ marginTop: 15 }}>
+      <Column flex="1" style={{ marginTop: 15 }}>
         <Typography
           ref={aboutText}
           variant="subtitle1"

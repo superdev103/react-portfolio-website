@@ -51,8 +51,8 @@ export default function ProfileSnippetMobile() {
         <Row justifyContent="center" style={{ paddingTop: 40 }}>
           <ExampleComponent
             image={MyPhoto}
-            imageWidth={133}
-            imageHeight={135}
+            imageWidth={140}
+            imageHeight={140}
             roundedSize="13"
             roundedColor="#E4E4E4"
           />
@@ -77,7 +77,7 @@ export default function ProfileSnippetMobile() {
         </Typography>
       </Column>
       <Column flexGrow={1} style={cardStyle} alignItems="center">
-        <Column flex={1}></Column>
+        <Column flex="1"></Column>
         <Typography
           variant="subtitle2"
           style={{
@@ -89,13 +89,13 @@ export default function ProfileSnippetMobile() {
         >
           {description}
         </Typography>
-        <Column flex={1}></Column>
+        <Column flex="1"></Column>
         <Link to="/portfolio" style={{ textDecoration: "none", marginBottom: 10, marginTop: 10 }}>
           <PrimaryActionButton variant="contained" borderRadius={36}>
             See Portfolio
           </PrimaryActionButton>
         </Link>
-        <Column flex={1}></Column>
+        <Column flex="1"></Column>
         <Column style={{ width: "100%" }} alignItems="center">
           <div style={dividerStyle}></div>
           <Row

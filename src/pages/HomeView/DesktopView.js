@@ -99,8 +99,8 @@ export default class DesktopView extends Component {
         <Row horizontal="center">
           <Header toggleNavDrawer={this.toggleNavDrawer} />
         </Row>
-        <Row vertical="center" flex={1}>
-          <Column flex={1} horizontal="center">
+        <Row vertical="center" flex="1">
+          <Column flex="1" horizontal="center">
             <Fade in={isMounted} timeout={2000}>
               <div>
                 <ExampleComponent
@@ -112,7 +112,7 @@ export default class DesktopView extends Component {
               </div>
             </Fade>
           </Column>
-          <Column flex={1} horizontal="center">
+          <Column flex="1" horizontal="center">
             <Slide
               direction="left"
               in={isMounted}
@@ -131,14 +131,14 @@ export default class DesktopView extends Component {
           onClose={this.toggleNavDrawer}
           onOpen={this.toggleNavDrawer}
         >
-          <Column flex={1} style={{ background: colorPrimary, width: "50vw" }}>
+          <Column flex="1" style={{ background: colorPrimary, width: "50vw" }}>
             <IconButton
               onClick={this.toggleNavDrawer}
               style={{ width: 70, height: 70 }}
             >
               <CloseIcon style={{ width: 50, height: 50, color: "fff" }} />
             </IconButton>
-            <Column flex={1} justifyContent="center">
+            <Column flex="1" justifyContent="center">
               <Typography
                 variant="h3"
                 style={{
@@ -152,7 +152,7 @@ export default class DesktopView extends Component {
               <div style={borderStyle} />
               <form>
                 <Row
-                  flex={1}
+                  flex="1"
                   style={{ marginRight: 65, marginLeft: 65, marginTop: 20 }}
                 >
                   <InputBase
@@ -196,7 +196,7 @@ export default class DesktopView extends Component {
                   }}
                   required
                 />
-                <Row flex={1} justifyContent="center" style={{ marginTop: 20 }}>
+                <Row flex="1" justifyContent="center" style={{ marginTop: 20 }}>
                   <PrimaryActionButton
                     variant="contained"
                     borderRadius={90}
