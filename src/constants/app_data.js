@@ -20,10 +20,10 @@ import mobileMafia from "../images/mobile_mafia.png";
 import mobileFitnesstackler from "../images/mobile_fitnesstackler.png";
 import mobileNe2Chat from "../images/mobile_ne2chat.png";
 
-export const githubUrl = "https://github.com/superstar103";
+export const githubUrl = "https://github.com/superboy103";
 export const telegramUrl = "https://t.me/superboy103";
 export const skypeUrl = "https://t.me/superboy103";
-export const sourceCodeUrl = "https://github.com/superstar103/react-portfolio-website";
+export const sourceCodeUrl = "https://github.com/superboy103/react-portfolio-website";
 
 export const description =
   "A Software Developer currently specializing in Native Android App Development, UI/UX Design, with experience in Full Stack Web Development.";

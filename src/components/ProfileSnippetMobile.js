@@ -12,7 +12,6 @@ import {
   skypeUrl,
   sourceCodeUrl
 } from "../constants/app_data";
-import viewSource from "../images/view_source.png";
 import PrimaryActionButton from "../components/buttons/PrimaryActionButton";
 import { Link } from "react-router-dom";
 
