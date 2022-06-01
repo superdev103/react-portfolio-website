@@ -28,7 +28,7 @@ const Signature = props => {
           variant={isMobile ? "h5" : "h3"}
           style={{ fontWeight: 600, marginTop: 15, marginRight: 10 }}
         >
-          CA
+          SB
         </Typography>
         <div style={circleContainer}>
           <span style={{ ...circle, width: width, height: height }} />
