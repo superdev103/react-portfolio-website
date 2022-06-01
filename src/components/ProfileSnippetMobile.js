@@ -4,16 +4,14 @@ import { colorPrimary } from "../constants/app_colors";
 import ExampleComponent from "react-rounded-image";
 import MyPhoto from "../images/avatar.jpg";
 import { Typography, IconButton } from "@material-ui/core";
+import { FaGithub, FaTelegramPlane, FaSkype, FaCode } from "react-icons/fa";
 import { description } from "../constants/app_data";
 import {
   githubUrl,
-  linkedInUrl,
-  stackOverflowUrl,
+  telegramUrl,
+  skypeUrl,
   sourceCodeUrl
 } from "../constants/app_data";
-import github from "../images/githubIcon.png";
-import linkedIn from "../images/linkedInIcon.png";
-import stackOverflow from "../images/stackoverflowIcon.png";
 import viewSource from "../images/view_source.png";
 import PrimaryActionButton from "../components/buttons/PrimaryActionButton";
 import { Link } from "react-router-dom";
@@ -76,7 +74,7 @@ export default function ProfileSnippetMobile() {
           variant="body2"
           style={{ color: "#D2D2D2", marginTop: 6, marginBottom: 10 }}
         >
-          SENIOR FULL STACK DEV | WEB & MOBILE & BLOCKCHAIN & GAME
+          Senior Full Stack Dev | Web & Mobile & Blockchain
         </Typography>
       </Column>
       <Column flexGrow={1} style={cardStyle} alignItems="center">
@@ -103,66 +101,44 @@ export default function ProfileSnippetMobile() {
           <div style={dividerStyle}></div>
           <Row
             justifyContent="center"
-            style={{ marginBottom: 10 }}
+            style={{ marginTop: 10, marginBottom: 10 }}
             flexGrow={1}
           >
             <IconButton
-              aria-label="LinkedIn Profile link"
-              style={socialBtnStyle}
-              onClick={() => {
-                window.open(linkedInUrl, "_blank");
-              }}
-            >
-              <img
-                src={linkedIn}
-                style={{ height: 40, width: 40 }}
-                alt={"LinkedIn Profile link"}
-              />
-            </IconButton>
-            <IconButton
-              aria-label="Stack Overflow Profile link"
-              style={{ ...socialBtnStyle, marginLeft: 20 }}
-              onClick={() => {
-                window.open(stackOverflowUrl, "_blank");
-              }}
-            >
-              <img
-                src={stackOverflow}
-                style={{ height: 40, width: 40 }}
-                alt={"Stack Overflow Profile link"}
-              />
-            </IconButton>
-            <IconButton
               aria-label="GitHub Profile link"
-              style={{ ...socialBtnStyle, marginLeft: 11 }}
+              style={socialBtnStyle}
               onClick={() => {
                 window.open(githubUrl, "_blank");
               }}
             >
-              <img
-                src={github}
-                style={{
-                  height: 60,
-                  width: 60
-                }}
-                alt={"GitHub Profile link"}
-              />
+              <FaGithub style={{ height: 30, width: 30, color: 'white' }} />
+            </IconButton>
+            <IconButton
+              aria-label="Telegram Profile link"
+              style={{ ...socialBtnStyle, marginLeft: 10 }}
+              onClick={() => {
+                window.open(telegramUrl, "_blank");
+              }}
+            >
+              <FaTelegramPlane style={{ height: 30, width: 30, color: 'white' }} />
+            </IconButton>
+            <IconButton
+              aria-label="Skype Profile link"
+              style={{ ...socialBtnStyle, marginLeft: 10 }}
+              onClick={() => {
+                window.open(skypeUrl, "_blank");
+              }}
+            >
+              <FaSkype style={{ height: 30, width: 30, color: 'white' }} />
             </IconButton>
             <IconButton
               aria-label="View source code"
-              style={{ ...socialBtnStyle, marginLeft: 11 }}
+              style={{ ...socialBtnStyle, marginLeft: 10 }}
               onClick={() => {
                 window.open(sourceCodeUrl, "_blank");
               }}
             >
-              <img
-                src={viewSource}
-                style={{
-                  height: 40,
-                  width: 40
-                }}
-                alt={"View source code"}
-              />
+              <FaCode style={{ height: 30, width: 30, color: 'white' }} />
             </IconButton>
           </Row>
         </Column>

@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import { Column, Row } from "simple-flexbox";
+import { FaGithub, FaTelegramPlane, FaSkype, FaCode } from "react-icons/fa";
 import { colorPrimary, colorAccent } from "../constants/app_colors";
-import github from "../images/githubIcon.png";
-import linkedIn from "../images/linkedInIcon.png";
-import stackOverflow from "../images/stackoverflowIcon.png";
-import viewSource from "../images/view_source.png";
 import { Link } from "react-router-dom";
 import PrimaryActionButton from "../components/buttons/PrimaryActionButton";
 import IconButton from "@material-ui/core/IconButton";
 import {
   githubUrl,
-  linkedInUrl,
-  stackOverflowUrl,
+  telegramUrl,
+  skypeUrl,
   sourceCodeUrl
 } from "../constants/app_data";
 import Collapse from "@material-ui/core/Collapse";
@@ -75,7 +72,7 @@ export default class ProfileSnippet extends Component {
             marginTop: 0
           }}
         >
-          Super Boy
+          SUPER BOY
         </Typography>
         <div style={borderStyle} />
         <Typography
@@ -91,78 +88,40 @@ export default class ProfileSnippet extends Component {
         </Typography>
         <Row>
           <IconButton
-            aria-label="LinkedIn Profile link"
-            style={socialBtnStyle}
-            onClick={() => {
-              window.open(linkedInUrl, "_blank");
-            }}
-          >
-            <Tooltip title="LinkedIn" aria-label="LinkedIn" placement="bottom">
-              <img
-                src={linkedIn}
-                style={{ height: 40, width: 40 }}
-                alt={"LinkedIn Profile link"}
-              />
-            </Tooltip>
-          </IconButton>
-          <IconButton
-            aria-label="Stack Overflow Profile link"
-            style={{ ...socialBtnStyle, marginLeft: 20 }}
-            onClick={() => {
-              window.open(stackOverflowUrl, "_blank");
-            }}
-          >
-            <Tooltip
-              title="StackOverflow"
-              aria-label="StackOverflow"
-              placement="bottom"
-            >
-              <img
-                src={stackOverflow}
-                style={{ height: 40, width: 40 }}
-                alt={"Stack Overflow Profile link"}
-              />
-            </Tooltip>
-          </IconButton>
-          <IconButton
             aria-label="GitHub Profile link"
-            style={{ ...socialBtnStyle, marginLeft: 11 }}
+            style={socialBtnStyle}
             onClick={() => {
               window.open(githubUrl, "_blank");
             }}
           >
-            <Tooltip title="Github" aria-label="github" placement="bottom">
-              <img
-                src={github}
-                style={{
-                  height: 60,
-                  width: 60
-                }}
-                alt={"GitHub Profile link"}
-              />
-            </Tooltip>
+            <FaGithub style={{ height: 40, width: 40, color: 'white' }} />
+          </IconButton>
+          <IconButton
+            aria-label="Telegram Profile link"
+            style={{ ...socialBtnStyle, marginLeft: 20 }}
+            onClick={() => {
+              window.open(telegramUrl, "_blank");
+            }}
+          >
+            <FaTelegramPlane style={{ height: 40, width: 40, color: 'white' }} />
+          </IconButton>
+          <IconButton
+            aria-label="Skype Profile link"
+            style={{ ...socialBtnStyle, marginLeft: 20 }}
+            onClick={() => {
+              window.open(skypeUrl, "_blank");
+            }}
+          >
+            <FaSkype style={{ height: 40, width: 40, color: 'white' }} />
           </IconButton>
           <IconButton
             aria-label="View source code link"
-            style={{ ...socialBtnStyle, marginLeft: 11 }}
+            style={{ ...socialBtnStyle, marginLeft: 20 }}
             onClick={() => {
               window.open(sourceCodeUrl, "_blank");
             }}
           >
-            <Tooltip
-              title="View source code"
-              aria-label="view source code"
-              placement="bottom"
-            >
-              <img
-                src={viewSource}
-                style={{
-                  height: 40,
-                  width: 40
-                }}
-                alt={"View source code link"}
-              />
-            </Tooltip>
+            <FaCode style={{ height: 40, width: 40, color: 'white' }} />
           </IconButton>
         </Row>
         <Link to="/portfolio" style={{ textDecoration: "none" }}>
