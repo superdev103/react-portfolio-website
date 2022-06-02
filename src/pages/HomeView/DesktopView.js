@@ -150,18 +150,20 @@ export default class DesktopView extends Component {
                 Contact
               </Typography>
               <div style={borderStyle} />
-              <form>
+              <form action="https://formspree.io/f/xbjwwebo" method="post">
                 <Row
                   flex="1"
                   style={{ marginRight: 65, marginLeft: 65, marginTop: 20 }}
                 >
                   <InputBase
+                    name="Name"
                     placeholder="Name"
                     inputProps={{ "aria-label": "enter name" }}
                     style={{ ...textFieldStyle, marginRight: 15 }}
                     required
                   />
                   <InputBase
+                    name="Email"
                     placeholder="Email"
                     inputProps={{ "aria-label": "enter email address" }}
                     style={textFieldStyle}
@@ -169,6 +171,7 @@ export default class DesktopView extends Component {
                   />
                 </Row>
                 <InputBase
+                  name="subject"
                   placeholder="Subject"
                   inputProps={{ "aria-label": "enter email subject" }}
                   style={{
@@ -182,6 +185,7 @@ export default class DesktopView extends Component {
                   required
                 />
                 <InputBase
+                  name="message"
                   placeholder="Message"
                   inputProps={{ "aria-label": "enter email message" }}
                   multiline
