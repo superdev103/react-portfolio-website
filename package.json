@@ -1,57 +1,24 @@
 {
-  "name": "portfolio-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.9.5",
-    "@material-ui/icons": "^4.9.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "minimist": "^1.2.5",
-    "react": "^16.13.0",
-    "react-card-flip": "^1.0.10",
-    "react-dom": "^16.13.0",
-    "react-draggable": "^4.2.0",
-    "react-flippy": "^0.1.5",
-    "react-icons": "^4.4.0",
-    "react-image-lazy-progressive-load-with-progress-bar": "^0.1.8",
-    "react-responsive": "^8.0.3",
-    "react-rounded-image": "^2.0.2",
-    "react-router-dom": "^5.1.2",
-    "react-router-page-transition": "^3.1.0",
-    "react-scripts": "3.4.0",
-    "react-sticky": "^6.0.3",
-    "react-swipeable-views": "^0.13.9",
-    "redux": "^4.0.5",
-    "simple-flexbox": "^2.3.0",
-    "typeface-montserrat": "0.0.75",
-    "typeface-roboto": "0.0.75",
-    "typeface-source-code-pro": "^1.1.3"
-  },
+  "name": "react-portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superboy103/react-portfolio-website.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superboy103/react-portfolio-website/issues"
   },
-  "devDependencies": {
-    "gh-pages": "^2.2.0",
-    "react-redux": "^7.2.0"
+  "homepage": "https://github.com/superboy103/react-portfolio-website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
